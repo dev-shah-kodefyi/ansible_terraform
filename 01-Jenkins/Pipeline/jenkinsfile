@@ -7,9 +7,10 @@ node {
    git 'https://github.com/devops311/ansible_terraform.git'
   }
   
- def sonar-path="02-Docker/DockerCompose/sonarqube"
- dir(sonar-path)
- {
+ def sonar_path="02-Docker/DockerCompose/sonarqube"
+ 
+ dir(sonar_path) {
+ 
   stage('Sonar Installation') {
    sh label: '', script: 'docker-compose up -d --build'
   }
