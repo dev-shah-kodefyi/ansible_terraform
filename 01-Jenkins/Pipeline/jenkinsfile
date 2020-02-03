@@ -8,6 +8,7 @@ node {
   }
   
  def sonar-path="02-Docker/DockerCompose/sonarqube"
+ dir(sonar-path)
  {
   stage('Sonar Installation') {
    sh label: '', script: 'docker-compose up -d --build'
