@@ -8,7 +8,7 @@ node {
   }
   
  
- }
+ 
  
  def project_path="01-Jenkins/Code/petclinic"
  
