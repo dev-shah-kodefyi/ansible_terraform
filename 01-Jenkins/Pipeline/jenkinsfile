@@ -45,7 +45,7 @@ node {
                     def uploadSpec= """{
                         "files": [{
                         "pattern": "/home/mtadminnuvepro/.jenkins/workspace/petpipe/01-Jenkins/Code/petclinic/target/*.war",
-                        "target": "pet"}]
+                        "target": "libs-snapshot-local"}]
                     }"""
         server.upload(uploadSpec)
         
